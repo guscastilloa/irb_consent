@@ -6,13 +6,13 @@
   <title>IRB Consent | Thomas Lloyd Study</title>
   <style>
     :root {
-      color-scheme: light;
+      color-scheme: light dark;
     }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      background: #f6f8fb;
+      background: #ffffff;
       color: #111827;
     }
     main {
@@ -35,13 +35,34 @@
     p {
       margin-top: 0;
     }
+    .consent-form {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d1d5db;
+    }
+    .consent-form button {
+      margin-top: 0.75rem;
+      padding: 0.5rem 1rem;
+      border: 0;
+      border-radius: 6px;
+      background: #1d4ed8;
+      color: #ffffff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .consent-form button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
   </style>
 </head>
 <body>
   <main>
-    <h1>Informed Consent Form</h1>
-    <p><strong>Project:</strong> Evangelical and Pentecostal Churches Research</p>
-    <p><strong>Researcher:</strong> Thomas Lloyd</p>
+    <header>
+      <h1>Informed Consent Form</h1>
+      <p><strong>Project:</strong> Evangelical and Pentecostal Churches Research</p>
+      <p><strong>Researcher:</strong> Thomas Lloyd</p>
+    </header>
 
     <h2>Purpose of the Study</h2>
     <p>
@@ -61,8 +82,29 @@
 
     <h2>Consent</h2>
     <p>
-      By continuing with this study, you acknowledge that you have read this information and agree to participate.
+      If you agree to participate, please confirm below.
     </p>
+    <form class="consent-form">
+      <label for="consent-checkbox">
+        <input id="consent-checkbox" type="checkbox">
+        I have read this form and consent to participate in this study.
+      </label>
+      <br>
+      <button id="consent-submit" type="submit" disabled>I Consent</button>
+    </form>
   </main>
+  <script>
+    const consentCheckbox = document.getElementById('consent-checkbox');
+    const consentSubmit = document.getElementById('consent-submit');
+
+    consentCheckbox.addEventListener('change', () => {
+      consentSubmit.disabled = !consentCheckbox.checked;
+    });
+
+    document.querySelector('.consent-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+      window.alert('Thank you. Your consent has been acknowledged.');
+    });
+  </script>
 </body>
 </html>
