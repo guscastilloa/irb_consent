@@ -1,110 +1,368 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IRB Consent | Thomas Lloyd Study</title>
-  <style>
-    :root {
-      color-scheme: light dark;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #ffffff;
-      color: #111827;
-    }
-    main {
-      max-width: 760px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 1.8rem;
-    }
-    h2 {
-      margin-bottom: 0.4rem;
-      margin-top: 1.5rem;
-      font-size: 1.15rem;
-    }
-    p {
-      margin-top: 0;
-    }
-    .consent-form {
-      margin-top: 1.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid #d1d5db;
-    }
-    .consent-form button {
-      margin-top: 0.75rem;
-      padding: 0.5rem 1rem;
-      border: 0;
-      border-radius: 6px;
-      background: #1d4ed8;
-      color: #ffffff;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .consent-form button:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-  </style>
+  <meta
+    name="description"
+    content="Consentimiento informado para el estudio sobre iglesias evangélicas, pentecostales y carismáticas en ciudades colombianas."
+  >
+  <title>Consentimiento Informado | Garage Churches</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Informed Consent Form</h1>
-      <p><strong>Project:</strong> Evangelical and Pentecostal Churches Research</p>
-      <p><strong>Researcher:</strong> Thomas Lloyd</p>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Universidad de Michigan</p>
+      <div class="hero-grid">
+        <div>
+          <h1>Consentimiento para Participar en un Estudio de Investigación</h1>
+          <p class="hero-summary">
+            Esta página presenta el consentimiento informado para el estudio
+            <strong>Garage Churches</strong>. Su propósito es que usted pueda leer el
+            documento completo antes o durante la entrevista.
+          </p>
+        </div>
+        <aside class="hero-panel" aria-label="Información del estudio">
+          <dl class="meta-list">
+            <div>
+              <dt>Título del estudio</dt>
+              <dd>Garage Churches</dd>
+            </div>
+            <div>
+              <dt>Investigador principal</dt>
+              <dd>Thomas Lloyd, Candidato a PhD, Universidad de Michigan</dd>
+            </div>
+            <div>
+              <dt>Asistente de investigación</dt>
+              <dd>Gustavo Adolfo Castillo Álvarez, Universidad de los Andes</dd>
+            </div>
+            <div>
+              <dt>Número de aprobación IRB</dt>
+              <dd><span class="pending-chip">HUM-XXXXXXXX pendiente de actualizar</span></dd>
+            </div>
+            <div>
+              <dt>Patrocinador del estudio</dt>
+              <dd><span class="pending-chip">Por confirmar</span></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#contenido-completo">Leer consentimiento completo</a>
+        <a class="button button-secondary" href="#preguntas-consentimiento">Ver preguntas de consentimiento</a>
+        <button class="button button-tertiary" id="print-page" type="button">Imprimir o guardar en PDF</button>
+      </div>
+      <p class="site-note">
+        Este sitio <strong>no recopila respuestas ni registra su consentimiento</strong>.
+        El consentimiento se obtiene verbalmente durante la entrevista por teléfono o Zoom.
+      </p>
     </header>
 
-    <h2>Purpose of the Study</h2>
-    <p>
-      You are invited to participate in a research study focused on evangelical and Pentecostal churches.
-      The goal is to better understand beliefs, practices, and experiences within these communities.
-    </p>
+    <main class="layout">
+      <nav class="section-nav" aria-label="Navegación por secciones">
+        <p class="nav-title">Contenido</p>
+        <a href="#informacion-clave">Información clave</a>
+        <a href="#proposito">Propósito del estudio</a>
+        <a href="#participacion">Quién puede participar</a>
+        <a href="#desarrollo">Participación en el estudio</a>
+        <a href="#riesgos-beneficios">Riesgos y beneficios</a>
+        <a href="#retiro">Finalización del estudio</a>
+        <a href="#proteccion">Protección y uso de la información</a>
+        <a href="#preguntas-consentimiento">Consentimiento verbal</a>
+        <a href="#contacto">Información de contacto</a>
+      </nav>
 
-    <h2>Voluntary Participation</h2>
-    <p>
-      Your participation is voluntary. You may decline to participate or withdraw at any time without penalty.
-    </p>
+      <div class="content-column">
+        <section class="fact-grid fact-section" id="informacion-clave" data-section>
+          <div class="section-intro">
+            <h2>Resumen rápido</h2>
+            <p>
+              Si quiere una vista breve antes de leer el documento completo, aquí están los puntos
+              principales de la invitación a participar.
+            </p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Propósito</p>
+            <p class="fact-text">
+              Comprender cómo funcionan las iglesias evangélicas, pentecostales y carismáticas
+              en ciudades colombianas, así como su relación con sus comunidades.
+            </p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Participación</p>
+            <p class="fact-text">
+              Una entrevista semiestructurada por Zoom o por teléfono, con duración aproximada
+              de 30 a 60 minutos.
+            </p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Riesgos principales</p>
+            <p class="fact-text">
+              Riesgo mínimo. Algunas preguntas pueden resultar sensibles, y usted puede omitir
+              cualquier pregunta que no desee responder.
+            </p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Carácter voluntario</p>
+            <p class="fact-text">
+              Participar es completamente voluntario. Puede retirarse en cualquier momento sin
+              penalidad ni consecuencia alguna.
+            </p>
+          </div>
+        </section>
 
-    <h2>Confidentiality</h2>
-    <p>
-      Information you provide will be handled confidentially and used for research purposes only.
-    </p>
+        <article class="consent-article" id="contenido-completo">
+          <section class="consent-section" id="proposito" data-section>
+            <h2>1. Información clave sobre los investigadores y este estudio</h2>
+            <p>
+              Usted está siendo invitado(a) a participar en un estudio de investigación. Este
+              documento contiene información que le ayudará a decidir si desea participar.
+              Tómese el tiempo que necesite para leerlo y hacer preguntas antes de tomar una decisión.
+            </p>
+            <h3>1.1 Lo que debe saber</h3>
+            <ul>
+              <li>
+                El propósito de este estudio es comprender cómo funcionan las iglesias evangélicas,
+                pentecostales y carismáticas en ciudades colombianas: sus características
+                organizacionales, el perfil de sus líderes y la relación entre estas iglesias y sus comunidades.
+              </li>
+              <li>
+                Si decide participar, se le pedirá responder una entrevista semiestructurada por
+                Zoom o por teléfono. La entrevista tendrá una duración aproximada de 30 a 60 minutos.
+              </li>
+              <li>
+                Los riesgos asociados a esta investigación son mínimos. Algunas preguntas abordan
+                temas sensibles como la seguridad comunitaria, dinámicas de género y finanzas de la iglesia.
+                Usted puede omitir cualquier pregunta que no desee responder.
+              </li>
+              <li>
+                No hay beneficios directos para usted por participar. Sin embargo, los resultados
+                contribuirán al conocimiento sobre el rol de las iglesias no católicas en las comunidades colombianas.
+              </li>
+              <li>
+                Su participación es completamente voluntaria. No está obligado(a) a participar y
+                puede retirarse en cualquier momento sin consecuencia alguna.
+              </li>
+            </ul>
+          </section>
 
-    <h2>Consent</h2>
-    <p>
-      If you agree to participate, please confirm below.
-    </p>
-    <form class="consent-form">
-      <label for="consent-checkbox">
-        <input id="consent-checkbox" type="checkbox">
-        I have read this form and consent to participate in this study.
-      </label>
-      <br>
-      <button id="consent-submit" type="submit" disabled>I Consent</button>
-    </form>
-  </main>
-  <script>
-    const consentCheckbox = document.getElementById('consent-checkbox');
-    const consentSubmit = document.getElementById('consent-submit');
+          <section class="consent-section" id="participacion" data-section>
+            <h2>2. Propósito del estudio</h2>
+            <p>
+              Este estudio busca entender cómo las iglesias evangélicas, pentecostales y carismáticas
+              operan en ciudades colombianas. Nos interesa conocer la historia y organización de estas
+              iglesias, el perfil y la trayectoria de sus líderes, las actividades que realizan y cómo
+              se relacionan con su entorno comunitario. Esta información nos ayudará a comprender mejor
+              el creciente papel de estas iglesias en la sociedad colombiana.
+            </p>
 
-    consentCheckbox.addEventListener('change', () => {
-      consentSubmit.disabled = !consentCheckbox.checked;
-    });
+            <h2>3. ¿Quién puede participar?</h2>
+            <h3>3.1 ¿Quién puede participar en este estudio?</h3>
+            <p>
+              Puede participar si usted es pastor(a) o líder principal de una iglesia cristiana
+              evangélica, pentecostal, carismática, neo-carismática o independiente y sin denominación
+              ubicada en Colombia, y tiene al menos 18 años de edad.
+            </p>
+          </section>
 
-    document.querySelector('.consent-form').addEventListener('submit', (event) => {
-      event.preventDefault();
-      window.alert('Thank you. Your consent has been acknowledged.');
-    });
-  </script>
+          <section class="consent-section" id="desarrollo" data-section>
+            <h2>4. Información sobre la participación en el estudio</h2>
+            <h3>4.1 ¿Qué sucederá durante el estudio?</h3>
+            <p>
+              Si acepta participar, un miembro de nuestro equipo de investigación le realizará una
+              entrevista por Zoom o por teléfono. La entrevista seguirá un cuestionario semiestructurado
+              que cubre los siguientes temas:
+            </p>
+            <ul>
+              <li>Perfil de la iglesia: nombre, ubicación, denominación, año de fundación, tamaño de las instalaciones y horarios de operación.</li>
+              <li>Membresía y alcance geográfico: número de miembros activos, frecuencia de reuniones y proporción de miembros del barrio.</li>
+              <li>Finanzas: fuentes de ingresos, principales gastos y apoyo económico a miembros.</li>
+              <li>Actividades y misión: temas de los sermones, actividades sociales y servicios no religiosos.</li>
+              <li>Evangelización: estrategias para atraer y retener miembros.</li>
+              <li>Demografía de miembros: edades, nivel socioeconómico y tipos de hogar.</li>
+              <li>Perfil del líder: formación, trayectoria y dedicación al rol pastoral.</li>
+              <li>Perspectivas sobre la comunidad: impacto de la iglesia en el vecindario, en sus miembros y en temas como seguridad, convivencia y roles de género.</li>
+            </ul>
+            <p>
+              Algunas preguntas abordan temas que pueden ser sensibles, como la seguridad en el barrio
+              de la iglesia, experiencias de violencia en la comunidad y dinámicas de género. Usted no
+              está obligado(a) a responder ninguna pregunta que no desee responder.
+            </p>
+            <p>
+              Con su permiso, la entrevista será grabada en audio para facilitar el análisis y codificación
+              posteriores. Si prefiere no ser grabado(a), el entrevistador tomará notas detalladas en su lugar.
+              La grabación de audio es opcional y no afecta su participación en el estudio.
+            </p>
+            <h3>4.2 ¿Cuánto tiempo tomará mi participación?</h3>
+            <p>
+              La entrevista tendrá una duración aproximada de 30 a 60 minutos. Su participación se limita
+              a una sola entrevista.
+            </p>
+          </section>
+
+          <section class="consent-section" id="riesgos-beneficios" data-section>
+            <h2>5. Riesgos y beneficios del estudio</h2>
+            <h3>5.1 ¿Qué riesgos enfrento al participar?</h3>
+            <p>Los riesgos de este estudio son mínimos. Los posibles riesgos incluyen:</p>
+            <ul>
+              <li>
+                Incomodidad con algunas preguntas. Algunas preguntas tratan sobre temas sensibles como
+                finanzas de la iglesia, seguridad comunitaria, violencia y roles de género. Usted puede
+                omitir cualquier pregunta sin dar una razón.
+              </li>
+              <li>
+                Pérdida de confidencialidad. Dado que este estudio recopila información sobre usted y su
+                iglesia, existe un riesgo de pérdida de confidencialidad. Consulte la Sección 7 para
+                conocer las medidas que tomaremos para proteger su información.
+              </li>
+            </ul>
+            <p>
+              Para minimizar estos riesgos, los investigadores desidentificarán todas las transcripciones
+              eliminando nombres, direcciones y otra información que pueda identificarlo(a), y almacenarán
+              los datos en servidores seguros de la Universidad de Michigan.
+            </p>
+            <h3>5.2 ¿Qué beneficios podría obtener al participar?</h3>
+            <p>
+              Es posible que usted no reciba ningún beneficio personal directo por participar en este estudio.
+              Sin embargo, su participación contribuirá a una mejor comprensión del papel que desempeñan las
+              iglesias no católicas en las comunidades colombianas, lo cual podría informar políticas públicas
+              y programas de desarrollo comunitario en el futuro.
+            </p>
+          </section>
+
+          <section class="consent-section" id="retiro" data-section>
+            <h2>6. Finalización del estudio</h2>
+            <h3>6.1 ¿Qué sucede si deseo dejar de participar?</h3>
+            <p>
+              Usted es libre de abandonar el estudio en cualquier momento. Si decide retirarse antes de que
+              termine la entrevista, no habrá ninguna penalidad ni consecuencia negativa para usted. Si desea
+              retirarse, por favor infórmele a la persona que lo esté entrevistando o comuníquese con los
+              investigadores indicados en la Sección 8.
+            </p>
+            <p>
+              Los investigadores conservarán la información recopilada sobre usted para los fines de la
+              investigación, a menos que usted solicite que sea eliminada de nuestros registros. Si la
+              información ya ha sido utilizada en un análisis de investigación, no será posible retirarla.
+            </p>
+          </section>
+
+          <section class="consent-section" id="proteccion" data-section>
+            <h2>7. Protección y uso de la información de la investigación</h2>
+            <h3>7.1 ¿Cómo protegerán los investigadores mi información?</h3>
+            <p>
+              Las grabaciones de audio y las transcripciones de las entrevistas serán almacenadas de forma
+              electrónica en el servicio de Dropbox de la Universidad de Michigan, el cual cumple con los
+              estándares de protección de datos de la universidad.
+            </p>
+            <p>
+              Los investigadores desidentificarán en la medida de lo posible las transcripciones eliminando
+              nombres propios, direcciones y cualquier otra información que pueda identificarlo(a) directamente.
+              Las grabaciones de audio originales serán eliminadas una vez completada la transcripción y la
+              verificación de calidad.
+            </p>
+            <p>Solo los miembros del equipo de investigación tendrán acceso a los datos identificables.</p>
+            <h3>7.2 ¿Quién tendrá acceso a mis datos?</h3>
+            <p>
+              Su información podría ser revisada por las siguientes personas o entidades, en determinadas
+              circunstancias:
+            </p>
+            <ul>
+              <li>
+                Funcionarios de la universidad, auditores y/o el Comité de Ética (IRB) de la Universidad de
+                Michigan, para asegurar que el estudio se conduce de manera segura y apropiada.
+              </li>
+              <li>Agencias gubernamentales, si la ley federal o estatal lo requiere.</li>
+            </ul>
+            <h3>7.3 ¿Qué pasará con la información recopilada?</h3>
+            <p>
+              Conservaremos la información recopilada durante este estudio para fines de investigación. Su nombre
+              y otra información que pueda identificarlo(a) directamente serán almacenados de forma segura y
+              separados de los datos de investigación.
+            </p>
+            <p>
+              Los resultados de este estudio podrían publicarse en artículos académicos o presentarse en
+              conferencias, pero no incluirán ninguna información que permita identificar a los participantes.
+            </p>
+            <h3>7.4 ¿Se utilizará mi información para futuras investigaciones?</h3>
+            <p>
+              Podríamos utilizar o compartir su información de investigación para futuros estudios. Si compartimos
+              su información con otros investigadores, será desidentificada, lo que significa que no contendrá su
+              nombre ni otra información que pueda identificarlo(a) directamente. No le solicitaremos un
+              consentimiento adicional para dichos estudios futuros.
+            </p>
+          </section>
+
+          <section class="consent-section consent-callout" id="preguntas-consentimiento" data-section>
+            <h2>8. ¿Cómo se obtiene el consentimiento durante la entrevista?</h2>
+            <p>
+              Debido a que la entrevista se realiza por teléfono o por Zoom, el equipo de investigación
+              solicitará su consentimiento de forma verbal. El entrevistador leerá las siguientes preguntas
+              y registrará sus respuestas por separado. Esta página no almacena respuestas.
+            </p>
+
+            <h3>Consentimiento de participación</h3>
+            <ol class="question-list">
+              <li>¿Comprende usted en qué consiste este estudio de investigación?</li>
+              <li>¿Ha tenido la oportunidad de hacer preguntas y han sido respondidas satisfactoriamente?</li>
+              <li>¿Acepta participar voluntariamente en este estudio de investigación?</li>
+            </ol>
+
+            <h3>Consentimiento opcional para grabación de audio</h3>
+            <p>
+              Con su permiso, nos gustaría grabar el audio de esta entrevista para facilitar el análisis
+              posterior. La grabación será almacenada de forma segura y eliminada después de la transcripción.
+              Si prefiere no ser grabado(a), tomaremos notas detalladas en su lugar y usted podrá continuar
+              participando normalmente.
+            </p>
+            <ol class="question-list" start="4">
+              <li>¿Acepta que la entrevista sea grabada en audio?</li>
+            </ol>
+          </section>
+
+          <section class="consent-section" id="contacto" data-section>
+            <h2>9. Información de contacto</h2>
+            <div class="contact-grid">
+              <section class="contact-card">
+                <h3>Investigador principal</h3>
+                <p>Thomas Lloyd, Candidato a PhD</p>
+                <p>Departamento de Economía, Universidad de Michigan</p>
+                <p><a href="mailto:tmlloyd@umich.edu">tmlloyd@umich.edu</a></p>
+                <p>Teléfono: [XXXXXX]</p>
+              </section>
+              <section class="contact-card">
+                <h3>Asistente de investigación</h3>
+                <p>Gustavo Adolfo Castillo Álvarez</p>
+                <p>Universidad de los Andes, Bogotá, Colombia</p>
+                <p><a href="mailto:ga.castillo@uniandes.edu.co">ga.castillo@uniandes.edu.co</a></p>
+                <p>Teléfono: <a href="tel:+573173273332">(+57) 317 327 3332</a></p>
+              </section>
+              <section class="contact-card">
+                <h3>Preguntas sobre sus derechos como participante</h3>
+                <p>University of Michigan Health Sciences and Behavioral Sciences Institutional Review Board (IRB-HSBS)</p>
+                <p>2800 Plymouth Road, Building 520, Room 2144, Ann Arbor, MI 48109-2800, Estados Unidos</p>
+                <p>Teléfono: +1 (734) 936-0933 o +1 (866) 936-0933</p>
+                <p><a href="mailto:irbhsbs@umich.edu">irbhsbs@umich.edu</a></p>
+                <p>Línea de Cumplimiento: +1 (866) 990-0111</p>
+              </section>
+            </div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <p>
+        Antes de compartir esta página con participantes, actualice los campos pendientes del IRB,
+        patrocinador y teléfono del investigador principal.
+      </p>
+    </footer>
+  </div>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Volver arriba">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
