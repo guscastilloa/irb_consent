@@ -60,8 +60,33 @@ a:hover {
   box-shadow: var(--hero-shadow);
 }
 
+.hero-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  width: min(100%, 16rem);
+  padding: 0.7rem 0.85rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(25, 78, 99, 0.12);
+  box-shadow: 0 12px 24px rgba(18, 56, 69, 0.08);
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .eyebrow {
-  margin: 0 0 0.8rem;
+  margin: 0;
   font-size: 0.85rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -415,6 +440,11 @@ li {
     flex-direction: column;
   }
 
+  .brand-mark {
+    width: 100%;
+    padding: 0.75rem 0.8rem;
+  }
+
   .button {
     width: 100%;
   }
@@ -448,6 +478,11 @@ li {
   .hero-actions,
   .back-to-top {
     display: none;
+  }
+
+  .brand-mark {
+    box-shadow: none;
+    background: #fff;
   }
 
   .consent-section + .consent-section {
