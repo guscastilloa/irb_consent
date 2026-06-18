@@ -41,6 +41,4 @@ Stop the local server with `Ctrl+C`.
 
 Update the placeholder values still present in the consent:
 
-- IRB approval number: `HUM-XXXXXXXX`
 - Study sponsor: `Por confirmar`
-- Principal investigator phone number: `[XXXXXX]`
