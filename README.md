@@ -36,9 +36,3 @@ Stop the local server with `Ctrl+C`.
 2. Preview locally with the Python server above.
 3. Commit and push to the GitHub remote.
 4. Let GitHub Pages update the live site.
-
-## Before sharing with participants
-
-Update the placeholder values still present in the consent:
-
-- Study sponsor: `Por confirmar`
